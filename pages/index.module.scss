@@ -1,0 +1,12 @@
+.section1 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: linear-gradient(to top, #0b0c10f5, #1f2833ea),
+    url(https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg)
+      no-repeat top center;
+
+  // #1 (https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg
+  // #2 (https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/BEPO4d0Jgiur90ov1/videoblocks-background-frame-from-number-digits-blue-numbers-binary-code-on-dark-background-with-black-space-in-middle-screen-stream-binary-matrix-code-concept-of-coding-hacker-or-mining-bitcoin-cryptocurrency_hannaz6qw_thumbnail-1080_01.png)
+  background-size: cover;
+}
