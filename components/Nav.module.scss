@@ -2,8 +2,8 @@
 
 .container {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   align-self: stretch;
   flex-grow: 1;
 }
@@ -13,8 +13,6 @@
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-  align-self: stretch;
-  flex-grow: 1;
   > a {
     text-decoration: none;
     font-size: 1rem;

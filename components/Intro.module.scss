@@ -5,14 +5,35 @@ div.container {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 20%;
-  column-gap: 30px;
+  padding: 10%;
+  row-gap: 40px;
   overflow-x: hidden;
-  h1 {
-    color: $light-green;
-    font-size: 5rem;
+  overflow-y: hidden;
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      color: $grey;
+      font-size: 6rem;
+      font-weight: bold;
+    }
+    h2 {
+      color: $light-green;
+      font-size: 5rem;
+      font-weight: bold;
+    }
+    h3 {
+      color: $dark-green;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 5px;
+    }
   }
-  h3 {
-    color: $grey;
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1rem;
   }
 }
