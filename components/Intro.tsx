@@ -72,7 +72,18 @@ const Intro = () => {
       <div className={styles.texts}>
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
-          <Link href={contactText == "Contact" ? "/contact" : ""} passHref>
+          {contactText == "Contact" ? (
+            <Link href={"/contact"} passHref>
+              <motion.h1
+                whileHover={{ translateX: 20 }}
+                onHoverStart={(e) => showContactText()}
+                onHoverEnd={(e) => hideContactText()}
+                style={{ cursor: "pointer", color: "white" }}
+              >
+                {contactText}
+              </motion.h1>
+            </Link>
+          ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showContactText()}
@@ -81,14 +92,26 @@ const Intro = () => {
             >
               {contactText}
             </motion.h1>
-          </Link>
+          )}
+
           <br></br>
           <p>{"</h1>"}</p>
         </div>
 
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
-          <Link href={workText == "Work" ? "/work" : ""} passHref>
+          {workText == "Work" ? (
+            <Link href={"/work"} passHref>
+              <motion.h1
+                whileHover={{ translateX: 20 }}
+                onHoverStart={(e) => showWorkText()}
+                onHoverEnd={(e) => hideWorkText()}
+                style={{ cursor: "pointer" }}
+              >
+                {workText}
+              </motion.h1>
+            </Link>
+          ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showWorkText()}
@@ -97,13 +120,24 @@ const Intro = () => {
             >
               {workText}
             </motion.h1>
-          </Link>
+          )}
           <br></br>
           <p>{"</h1>"}</p>
         </div>
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
-          <Link href={aboutText == "About" ? "/about" : ""} passHref>
+          {aboutText == "About" ? (
+            <Link href={"/about"} passHref>
+              <motion.h1
+                whileHover={{ translateX: 20 }}
+                onHoverStart={(e) => showAboutText()}
+                onHoverEnd={(e) => hideAboutText()}
+                style={{ cursor: "pointer" }}
+              >
+                {aboutText}
+              </motion.h1>
+            </Link>
+          ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showAboutText()}
@@ -112,7 +146,8 @@ const Intro = () => {
             >
               {aboutText}
             </motion.h1>
-          </Link>
+          )}
+
           <br></br>
           <p>{"</h1>"}</p>
         </div>
