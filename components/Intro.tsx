@@ -20,17 +20,16 @@ import {
 import Link from "next/link";
 
 const Intro = () => {
-  const [aboutText, setAboutText] = React.useState("Hey");
+  const [aboutText, setAboutText] = React.useState("Sifat");
   const [workText, setWorkText] = React.useState("I am");
-  const [skillText, setSkillText] = React.useState("Sifat");
-  const [contactText, setContactText] = React.useState("A Front-End Dev");
+  const [contactText, setContactText] = React.useState("Hey!");
 
   const showAboutText = () => {
     setAboutText("About");
   };
 
   const hideAboutText = () => {
-    setAboutText("Hey!");
+    setAboutText("Sifat");
   };
 
   const showWorkText = () => {
@@ -40,64 +39,93 @@ const Intro = () => {
   const hideWorkText = () => {
     setWorkText("I am");
   };
-  const showSkillText = () => {
-    setSkillText("Skills");
-  };
-
-  const hideSkillText = () => {
-    setSkillText("Sifat");
-  };
   const showContactText = () => {
     setContactText("Contact");
   };
 
   const hideContactText = () => {
-    setContactText("A Front-End Dev");
+    setContactText("Hey!");
+  };
+
+  const changeText = () => {
+    showContactText();
+    showAboutText();
+    showWorkText();
+  };
+
+  const changeTextAgain = () => {
+    hideContactText();
+    hideAboutText();
+    hideWorkText();
+  };
+
+  const bounceTransition = {
+    y: {
+      duration: 1,
+      yoyo: Infinity,
+      ease: "easeOut",
+    },
+    backgroundColor: {
+      duration: 0,
+      yoyo: Infinity,
+      ease: "easeOut",
+      repeatDelay: 2,
+    },
   };
 
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      onTouchStart={() => changeText()}
+      onTouchEnd={() => changeTextAgain()}
+    >
       <div className={styles.texts}>
-        <Link href={aboutText == "About" ? "/about" : ""} passHref>
-          <motion.h1
-            whileHover={{ translateX: 20 }}
-            onHoverStart={(e) => showAboutText()}
-            onHoverEnd={(e) => hideAboutText()}
-            style={{ cursor: "pointer" }}
-          >
-            {aboutText}
-          </motion.h1>
-        </Link>
-        <Link href={workText == "Work" ? "/work" : ""} passHref>
-          <motion.h2
-            whileHover={{ translateX: 20 }}
-            onHoverStart={(e) => showWorkText()}
-            onHoverEnd={(e) => hideWorkText()}
-            style={{ cursor: "pointer" }}
-          >
-            {workText}
-          </motion.h2>
-        </Link>
-        <Link href={skillText == "Skills" ? "/skills" : ""} passHref>
-          <motion.h2
-            whileHover={{ translateX: 20 }}
-            onHoverStart={(e) => showSkillText()}
-            onHoverEnd={(e) => hideSkillText()}
-            style={{ cursor: "pointer" }}
-          >
-            {skillText}
-          </motion.h2>
-        </Link>
-        <Link href={contactText == "Contact" ? "/contact" : ""} passHref>
-          <motion.h3
-            whileHover={{ translateX: 20 }}
-            onHoverStart={(e) => showContactText()}
-            onHoverEnd={(e) => hideContactText()}
-            style={{ cursor: "pointer" }}
-          >
-            {contactText}
-          </motion.h3>
-        </Link>
+        <div className={styles.tagDiv}>
+          <p>{"<h1>"}</p>
+          <Link href={contactText == "Contact" ? "/contact" : ""} passHref>
+            <motion.h1
+              whileHover={{ translateX: 20 }}
+              onHoverStart={(e) => showContactText()}
+              onHoverEnd={(e) => hideContactText()}
+              style={{ cursor: "pointer", color: "white" }}
+            >
+              {contactText}
+            </motion.h1>
+          </Link>
+          <br></br>
+          <p>{"</h1>"}</p>
+        </div>
+
+        <div className={styles.tagDiv}>
+          <p>{"<h1>"}</p>
+          <Link href={workText == "Work" ? "/work" : ""} passHref>
+            <motion.h1
+              whileHover={{ translateX: 20 }}
+              onHoverStart={(e) => showWorkText()}
+              onHoverEnd={(e) => hideWorkText()}
+              style={{ cursor: "pointer" }}
+            >
+              {workText}
+            </motion.h1>
+          </Link>
+          <br></br>
+          <p>{"</h1>"}</p>
+        </div>
+        <div className={styles.tagDiv}>
+          <p>{"<h1>"}</p>
+          <Link href={aboutText == "About" ? "/about" : ""} passHref>
+            <motion.h1
+              whileHover={{ translateX: 20 }}
+              onHoverStart={(e) => showAboutText()}
+              onHoverEnd={(e) => hideAboutText()}
+              style={{ cursor: "pointer" }}
+            >
+              {aboutText}
+            </motion.h1>
+          </Link>
+          <br></br>
+          <p>{"</h1>"}</p>
+        </div>
       </div>
 
       <div className={styles.socials}>
@@ -107,7 +135,7 @@ const Intro = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaGithub fill="#66fcf1" size="2.5rem" cursor="pointer" />
+          <FaGithub fill="#e8c99b" size="2.5rem" cursor="pointer" />
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.5 }}
@@ -116,7 +144,7 @@ const Intro = () => {
           rel="noreferrer"
         >
           {" "}
-          <FaLinkedinIn fill="#66fcf1" size="2.5rem" cursor="pointer" />
+          <FaLinkedinIn fill="#e8c99b" size="2.5rem" cursor="pointer" />
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.5 }}
@@ -125,7 +153,7 @@ const Intro = () => {
           rel="noreferrer"
         >
           {" "}
-          <FaTwitter fill="#66fcf1" size="2.5rem" cursor="pointer" />
+          <FaTwitter fill="#e8c99b" size="2.5rem" cursor="pointer" />
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.5 }}
@@ -133,7 +161,7 @@ const Intro = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <FaYoutube fill="#66fcf1" size="2.5rem" />
+          <FaYoutube fill="#e8c99b" size="2.5rem" />
         </motion.a>
         <motion.a
           whileHover={{ scale: 1.5 }}
@@ -142,8 +170,20 @@ const Intro = () => {
           rel="noreferrer"
         >
           {" "}
-          <FaFacebook fill="#66fcf1" size="2.5rem" cursor="pointer" />
+          <FaFacebook fill="#e8c99b" size="2.5rem" cursor="pointer" />
         </motion.a>
+      </div>
+      <div className={styles.tapBehavior}>
+        <motion.p
+          transition={bounceTransition}
+          animate={{
+            y: ["100%", "-100%"],
+            backgroundColor: "transparent",
+          }}
+        >
+          {" "}
+          Tap Anywhere
+        </motion.p>
       </div>
     </div>
   );

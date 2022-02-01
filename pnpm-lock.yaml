@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@fontsource/epilogue': ^4.5.2
   '@fontsource/montserrat': ^4.5.3
+  '@fontsource/pacifico': ^4.5.1
   '@types/node': ^17.0.13
   '@types/react': ^17.0.38
   autoprefixer: ^10.4.2
@@ -20,6 +21,7 @@ specifiers:
 dependencies:
   '@fontsource/epilogue': 4.5.2
   '@fontsource/montserrat': 4.5.3
+  '@fontsource/pacifico': 4.5.1
   framer-motion: 6.2.3_react-dom@17.0.2+react@17.0.2
   next: 12.0.9_8ea0df840a4126039579523f29859284
   postcss: 8.4.5
@@ -89,6 +91,10 @@ packages:
 
   /@fontsource/montserrat/4.5.3:
     resolution: {integrity: sha512-VT+wPK/PHWwqm7r6UbTjI+oj31obzj9+V9HSUl8tcuKtv4deYuH+OAbMf5RG62uVDT8wiZ8QyCbr5gmfHQ3ykg==}
+    dev: false
+
+  /@fontsource/pacifico/4.5.1:
+    resolution: {integrity: sha512-Hb3pWijmocLLqfQZKRMtG61KbOgOD1g4W509PuMWHSSu7baB1Pvexm64hQXxgiEgBMnQ9oS56lH5yNBe47wVsg==}
     dev: false
 
   /@humanwhocodes/config-array/0.9.3:
