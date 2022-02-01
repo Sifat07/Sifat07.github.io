@@ -48,15 +48,9 @@ const Intro = () => {
   };
 
   const changeText = () => {
-    showContactText();
-    showAboutText();
-    showWorkText();
-  };
-
-  const changeTextAgain = () => {
-    hideContactText();
-    hideAboutText();
-    hideWorkText();
+    contactText == "Hey!" ? showContactText() : hideContactText();
+    workText == "I am" ? showWorkText() : hideWorkText();
+    aboutText == "Sifat" ? showAboutText() : hideAboutText();
   };
 
   const bounceTransition = {
@@ -74,11 +68,7 @@ const Intro = () => {
   };
 
   return (
-    <div
-      className={styles.container}
-      onTouchStart={() => changeText()}
-      onTouchEnd={() => changeTextAgain()}
-    >
+    <div className={styles.container} onTouchStart={() => changeText()}>
       <div className={styles.texts}>
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
