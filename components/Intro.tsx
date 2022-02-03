@@ -72,7 +72,9 @@ const Intro = () => {
               onHoverStart={(e) => showContactText()}
               onHoverEnd={(e) => hideContactText()}
               style={{ cursor: "pointer", color: "white" }}
-              onClick={() => router.push("/contact")}
+              onClick={
+                contactText == "Contact" ? () => router.push("/contact") : null
+              }
             >
               {contactText}
             </motion.h1>
@@ -99,7 +101,7 @@ const Intro = () => {
               onHoverStart={(e) => showWorkText()}
               onHoverEnd={(e) => hideWorkText()}
               style={{ cursor: "pointer" }}
-              onClick={() => router.push("/work")}
+              onClick={workText == "Work" ? () => router.push("/work") : null}
             >
               {workText}
             </motion.h1>
@@ -124,7 +126,9 @@ const Intro = () => {
               onHoverStart={(e) => showAboutText()}
               onHoverEnd={(e) => hideAboutText()}
               style={{ cursor: "pointer" }}
-              onClick={() => router.push("/about")}
+              onClick={
+                aboutText == "About" ? () => router.push("/about") : null
+              }
             >
               {aboutText}
             </motion.h1>
