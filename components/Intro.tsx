@@ -1,13 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Intro.module.scss";
-import {
-  AiOutlineFacebook,
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-  AiOutlineTwitter,
-  AiOutlineYoutube,
-} from "react-icons/ai";
 import { motion } from "framer-motion";
 import {
   FaFacebook,
@@ -18,6 +11,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Link from "next/link";
+import router from "next/router";
 
 const Intro = () => {
   const [aboutText, setAboutText] = React.useState("Sifat");
@@ -73,16 +67,15 @@ const Intro = () => {
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
           {contactText == "Contact" ? (
-            <Link href={"/contact"} passHref>
-              <motion.h1
-                whileHover={{ translateX: 20 }}
-                onHoverStart={(e) => showContactText()}
-                onHoverEnd={(e) => hideContactText()}
-                style={{ cursor: "pointer", color: "white" }}
-              >
-                {contactText}
-              </motion.h1>
-            </Link>
+            <motion.h1
+              whileHover={{ translateX: 20 }}
+              onHoverStart={(e) => showContactText()}
+              onHoverEnd={(e) => hideContactText()}
+              style={{ cursor: "pointer", color: "white" }}
+              onClick={() => router.push("/contact")}
+            >
+              {contactText}
+            </motion.h1>
           ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
@@ -101,16 +94,15 @@ const Intro = () => {
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
           {workText == "Work" ? (
-            <Link href={"/work"} passHref>
-              <motion.h1
-                whileHover={{ translateX: 20 }}
-                onHoverStart={(e) => showWorkText()}
-                onHoverEnd={(e) => hideWorkText()}
-                style={{ cursor: "pointer" }}
-              >
-                {workText}
-              </motion.h1>
-            </Link>
+            <motion.h1
+              whileHover={{ translateX: 20 }}
+              onHoverStart={(e) => showWorkText()}
+              onHoverEnd={(e) => hideWorkText()}
+              style={{ cursor: "pointer" }}
+              onClick={() => router.push("/work")}
+            >
+              {workText}
+            </motion.h1>
           ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
@@ -127,16 +119,15 @@ const Intro = () => {
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
           {aboutText == "About" ? (
-            <Link href={"/about"} passHref>
-              <motion.h1
-                whileHover={{ translateX: 20 }}
-                onHoverStart={(e) => showAboutText()}
-                onHoverEnd={(e) => hideAboutText()}
-                style={{ cursor: "pointer" }}
-              >
-                {aboutText}
-              </motion.h1>
-            </Link>
+            <motion.h1
+              whileHover={{ translateX: 20 }}
+              onHoverStart={(e) => showAboutText()}
+              onHoverEnd={(e) => hideAboutText()}
+              style={{ cursor: "pointer" }}
+              onClick={() => router.push("/about")}
+            >
+              {aboutText}
+            </motion.h1>
           ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
