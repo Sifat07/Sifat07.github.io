@@ -1,0 +1,23 @@
+@import "../components/utils/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-black;
+  color: white;
+  row-gap: 50px;
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  button {
+    padding: 10px;
+    background-color: $gold;
+    color: white;
+    font-size: 2rem;
+  }
+}
