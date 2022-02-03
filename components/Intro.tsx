@@ -62,13 +62,14 @@ const Intro = () => {
   };
 
   return (
-    <div className={styles.container} onTouchStart={() => changeText()}>
+    <motion.div className={styles.container} onTap={(e) => changeText()}>
       <div className={styles.texts}>
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
           {contactText == "Contact" ? (
             <motion.h1
               whileHover={{ translateX: 20 }}
+              whileTap={{ translateY: 20 }}
               onHoverStart={(e) => showContactText()}
               onHoverEnd={(e) => hideContactText()}
               style={{ cursor: "pointer", color: "white" }}
@@ -81,6 +82,7 @@ const Intro = () => {
           ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
+              whileTap={{ translateY: 20 }}
               onHoverStart={(e) => showContactText()}
               onHoverEnd={(e) => hideContactText()}
               style={{ cursor: "pointer", color: "white" }}
@@ -98,6 +100,7 @@ const Intro = () => {
           {workText == "Work" ? (
             <motion.h1
               whileHover={{ translateX: 20 }}
+              whileTap={{ translateY: 20 }}
               onHoverStart={(e) => showWorkText()}
               onHoverEnd={(e) => hideWorkText()}
               style={{ cursor: "pointer" }}
@@ -108,6 +111,7 @@ const Intro = () => {
           ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
+              whileTap={{ translateY: 20 }}
               onHoverStart={(e) => showWorkText()}
               onHoverEnd={(e) => hideWorkText()}
               style={{ cursor: "pointer" }}
@@ -123,6 +127,7 @@ const Intro = () => {
           {aboutText == "About" ? (
             <motion.h1
               whileHover={{ translateX: 20 }}
+              whileTap={{ translateY: 20 }}
               onHoverStart={(e) => showAboutText()}
               onHoverEnd={(e) => hideAboutText()}
               style={{ cursor: "pointer" }}
@@ -135,6 +140,7 @@ const Intro = () => {
           ) : (
             <motion.h1
               whileHover={{ translateX: 20 }}
+              whileTap={{ translateY: 20 }}
               onHoverStart={(e) => showAboutText()}
               onHoverEnd={(e) => hideAboutText()}
               style={{ cursor: "pointer" }}
@@ -205,7 +211,7 @@ const Intro = () => {
           Tap Anywhere
         </motion.p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
