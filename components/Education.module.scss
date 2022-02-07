@@ -2,7 +2,10 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-self: stretch;
+  flex-grow: 1;
   row-gap: 2rem;
+  //border: 1px solid white;
 }
 .cards {
   display: flex;
