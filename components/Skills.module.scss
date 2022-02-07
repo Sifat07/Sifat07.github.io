@@ -1,0 +1,32 @@
+@import "./utils/variables.scss";
+
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  > h4 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .progressBarContainer {
+    flex-grow: 1;
+    min-width: 30px;
+    border-radius: 3px;
+    height: 15px;
+    background: $secondary-black;
+    //margin-left: 16px;
+  }
+  .progress {
+    border-radius: 3px;
+    height: 15px;
+    //width: 70%;
+    background: $palegold;
+  }
+}

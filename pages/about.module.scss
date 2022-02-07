@@ -4,20 +4,32 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: $primary-black;
   color: white;
   row-gap: 50px;
 
+  button {
+    text-decoration: none;
+    background: transparent;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-self: flex-start;
+  }
+
   h1 {
     font-size: 6rem;
   }
 
-  button {
-    padding: 10px;
-    background-color: $gold;
-    color: white;
-    font-size: 2rem;
+  .tabContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    align-self: stretch;
+    padding: 5%;
+    //border: 1px solid crimson;
   }
 }

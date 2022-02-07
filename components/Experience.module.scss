@@ -1,0 +1,43 @@
+@import "./utils/variables.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 2rem;
+  background-color: $secondary-black;
+  padding: 1.5rem;
+  border-left: 2px solid $palegold;
+
+  h2 {
+    font-size: 2rem;
+    color: white;
+    line-height: 2rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $grey;
+    line-height: 1rem;
+  }
+
+  .company {
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $grey;
+      line-height: 1rem;
+    }
+  }
+}

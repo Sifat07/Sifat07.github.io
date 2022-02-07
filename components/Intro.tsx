@@ -13,6 +13,38 @@ import {
 import Link from "next/link";
 import router from "next/router";
 
+// Our custom easing
+let easing = [0.6, -0.05, 0.01, 0.99];
+
+// animate: defines animation
+// initial: defines initial state of animation or stating point.
+// exit: defines animation when component exits
+
+// Custom variant
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+    transition: { duration: 0.6, ease: easing },
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
+
+const stagger = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const Intro = () => {
   const [aboutText, setAboutText] = React.useState("Sifat");
   const [workText, setWorkText] = React.useState("I am");
@@ -62,12 +94,23 @@ const Intro = () => {
   };
 
   return (
-    <div className={styles.container} onTouchStart={() => changeText()}>
-      <div className={styles.texts}>
-        <div className={styles.tagDiv}>
+    <motion.div
+      initial="initial"
+      animate="animate"
+      exit={{ opacity: 0 }}
+      className={styles.container}
+      onTouchStart={() => changeText()}
+    >
+      <motion.div
+        animate={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
+        className={styles.texts}
+      >
+        <motion.div variants={stagger} className={styles.tagDiv}>
           <p>{"<h1>"}</p>
           {contactText == "Contact" ? (
             <motion.h1
+              variants={fadeInUp}
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showContactText()}
               onHoverEnd={(e) => hideContactText()}
@@ -80,6 +123,7 @@ const Intro = () => {
             </motion.h1>
           ) : (
             <motion.h1
+              variants={fadeInUp}
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showContactText()}
               onHoverEnd={(e) => hideContactText()}
@@ -91,12 +135,13 @@ const Intro = () => {
 
           <br></br>
           <p>{"</h1>"}</p>
-        </div>
+        </motion.div>
 
         <div className={styles.tagDiv}>
           <p>{"<h1>"}</p>
           {workText == "Work" ? (
             <motion.h1
+              variants={fadeInUp}
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showWorkText()}
               onHoverEnd={(e) => hideWorkText()}
@@ -107,6 +152,7 @@ const Intro = () => {
             </motion.h1>
           ) : (
             <motion.h1
+              variants={fadeInUp}
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showWorkText()}
               onHoverEnd={(e) => hideWorkText()}
@@ -122,6 +168,7 @@ const Intro = () => {
           <p>{"<h1>"}</p>
           {aboutText == "About" ? (
             <motion.h1
+              variants={fadeInUp}
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showAboutText()}
               onHoverEnd={(e) => hideAboutText()}
@@ -134,6 +181,7 @@ const Intro = () => {
             </motion.h1>
           ) : (
             <motion.h1
+              variants={fadeInUp}
               whileHover={{ translateX: 20 }}
               onHoverStart={(e) => showAboutText()}
               onHoverEnd={(e) => hideAboutText()}
@@ -146,7 +194,7 @@ const Intro = () => {
           <br></br>
           <p>{"</h1>"}</p>
         </div>
-      </div>
+      </motion.div>
 
       <div className={styles.socials}>
         <motion.a
@@ -205,7 +253,7 @@ const Intro = () => {
           Tap Anywhere
         </motion.p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

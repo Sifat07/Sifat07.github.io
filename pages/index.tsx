@@ -1,27 +1,18 @@
-import React from "react";
-import Intro from "../components/Intro";
-import Nav from "../components/Nav";
-import styles from "./index.module.scss";
-import Image from "next/image";
-import bg from "../components/assets/images/IMG_1049.png";
+import * as React from "react";
+import { NextPage } from "next";
 
-const index = () => {
-  return (
-    <div>
-      <div className={styles.section1}>
-        <Image
-          alt="Mountains"
-          src={bg}
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-          placeholder="blur"
-        />
-        <Nav />
-        <Intro />
-      </div>
-    </div>
-  );
+const PortfolioHome: NextPage = () => {
+  return <div></div>;
 };
 
-export default index;
+// redirect to home
+export async function getServerSideProps(): Promise<any> {
+  return {
+    redirect: {
+      destination: "/home",
+      permanent: true,
+    },
+  };
+}
+
+export default PortfolioHome;

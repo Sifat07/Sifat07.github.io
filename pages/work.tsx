@@ -1,12 +1,15 @@
+import Link from "next/link";
 import router from "next/router";
 import React from "react";
+import { Logo } from "../components/Logo";
 import styles from "./work.module.scss";
 
 const Work = () => {
   return (
     <div className={styles.container}>
-      <h1>Work</h1>
-      <button onClick={() => router.push("/")}>Home</button>
+      <button onClick={() => router.push("/")}>
+        <Logo />
+      </button>
     </div>
   );
 };
