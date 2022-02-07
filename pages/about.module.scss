@@ -8,7 +8,7 @@
   align-items: center;
   background-color: $primary-black;
   color: white;
-  row-gap: 50px;
+  row-gap: 3rem;
 
   button {
     text-decoration: none;
@@ -21,15 +21,75 @@
 
   h1 {
     font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 3rem;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
+    align-items: center;
+    //border: 1px solid red;
+    padding: 0% 5%;
+  }
+
+  .aboutText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+    width: 40%;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      color: $grey;
+      opacity: 10%;
+      font-family: pacifico;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1rem;
+    }
+  }
+
+  .avatarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    align-self: stretch;
+    //border: 1px solid red;
+  }
+
+  .avatar {
+    position: relative;
+    width: 70%;
+    height: auto;
+    //padding-top: 20%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid $palegold;
+
+    .avatarImage {
+      //border: 1px solid red;
+      //width: 100%;
+      // height: 100%;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
   }
 
   .tabContainer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 80%;
+    width: 60%;
     align-self: stretch;
-    padding: 5%;
     //border: 1px solid crimson;
+    padding: 5% 5%;
   }
 }

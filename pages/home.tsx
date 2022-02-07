@@ -18,7 +18,7 @@ const Home = () => {
     <div>
       <div className={styles.section1}>
         <Image
-          alt="Mountains"
+          alt="background"
           src={bg}
           layout="fill"
           objectFit="cover"

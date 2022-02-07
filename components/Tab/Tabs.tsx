@@ -30,7 +30,7 @@ const Tabs: FC<TabsProps> = ({ tabs = [], selectedTab = 0, onClick }) => {
         {tabs.map((tab) => (
           <button
             className={
-              selectedTab === tab.index ? styles.selectedTab : styles.Tab
+              selectedTab === tab.index ? styles.selectedTab : styles.tab
             }
             onClick={() => onClick(tab.index)}
             key={tab.index}
