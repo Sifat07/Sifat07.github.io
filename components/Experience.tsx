@@ -12,7 +12,7 @@ const Experience = () => {
       <p>
         Assisted in building beautiful user interfaces for in-house education
         platform without compromising functionality for aesthetics. Worked in an
-        agile environment with daily stand-ups, kept tract of user stories/bugs
+        agile environment with daily stand-ups, kept track of user stories/bugs
         in Github project.
       </p>
     </div>

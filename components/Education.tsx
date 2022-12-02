@@ -7,7 +7,7 @@ const Education = () => {
       <div className={styles.cards}>
         <div className={styles.institute}>
           <h3>University Of Dhaka</h3>
-          <p>( 2019-2021 )</p>
+          <p>( 2019-2022 )</p>
         </div>
         <h2>Master in Information Technology</h2>
         <p>
