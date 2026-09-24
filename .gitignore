@@ -39,3 +39,6 @@ resume_text.txt
 
 # AI/Gemini artifacts
 .gemini/
+
+# typescript
+*.tsbuildinfo
