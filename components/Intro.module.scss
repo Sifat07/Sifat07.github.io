@@ -46,6 +46,13 @@ div.container {
       @include code-tag;
       line-height: 1rem;
     }
+
+    .role {
+      color: white;
+      font-size: 1.75rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
   }
   .socials {
     display: flex;
@@ -87,6 +94,9 @@ div.container {
       h1 {
         font-size: 3.5rem;
         line-height: 3.2rem;
+      }
+      .role {
+        font-size: 1.3rem;
       }
     }
   }

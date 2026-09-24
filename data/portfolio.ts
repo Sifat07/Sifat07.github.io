@@ -60,7 +60,15 @@ export const educationData = [
   },
 ];
 
-export const projectsData = [
+export interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  link?: string;
+  image?: string;
+}
+
+export const projectsData: Project[] = [
   {
     title: "Peña Madridista de Bangladesh",
     description: "The official website and central hub for the Real Madrid supporters' club in Bangladesh. Engineered a custom Membership System that supports over 5,000 registered fans.",
@@ -74,5 +82,16 @@ export const projectsData = [
     tech: ["Next.js", "Supabase", "Tailwind CSS", "TypeScript", "Pathao SDK"],
     link: "https://www.madridismocorner.com/",
     image: "/images/projects/madridismo-corner.png"
+  },
+  {
+    title: "Dollabills",
+    description: "A social platform with real-time chat and video conferencing. Contributed to frontend development: fixed broken UIs, improved responsiveness and refined user flows.",
+    tech: ["PHP", "Laravel", "JavaScript", "AWS Chime", "AWS S3", "WebRTC", "WebSocket"],
+    link: "https://dollabills.club/",
+  },
+  {
+    title: "Inventory & HR Management System",
+    description: "An inventory and HR solution with role-based access. Led the complete frontend implementation, from design to integration with the backend APIs.",
+    tech: ["Next.js", "TypeScript", "Express.js", "TypeORM", "MySQL"],
   },
 ];
