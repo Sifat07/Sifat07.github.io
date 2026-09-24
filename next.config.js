@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
   trailingSlash: true,
   sassOptions: {
     quietDeps: true,
   },
   images: {
+    // GitHub Pages serves static files only, so Next's image optimizer can't run
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',

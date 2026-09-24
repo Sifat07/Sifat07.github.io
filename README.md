@@ -23,3 +23,7 @@ Skills, experience, education and projects live in `data/portfolio.ts`. Project 
 - `pnpm build` — production build
 - `pnpm start` — serve the production build
 - `pnpm format` — run Prettier
+
+## Deployment
+
+Pushes to `main` build a static export (`out/`) and publish it to https://sifat07.github.io via `.github/workflows/deploy.yml`. In the repo's Settings → Pages, the source must be set to "GitHub Actions".
