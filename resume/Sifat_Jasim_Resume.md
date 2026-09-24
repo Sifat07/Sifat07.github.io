@@ -16,7 +16,7 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 - Co-founding a multi-tenant commerce product, building it from zero.
 
 ### Ngaze, Inc. — Software Engineer
-*Dec 2022 – Aug 2026*
+*Dec 2022 – Jul 2026*
 
 - Collaborated on multi-tenant SaaS architecture implementing subdomain routing, organization on-boarding and tenant-aware UIs that enabled segmented deployments for different institutions.
 - Built core Learning Management System features including classroom workflows, lesson sequencing, progress tracking and live interactions that improved student engagement and teacher visibility.
