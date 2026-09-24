@@ -26,4 +26,4 @@ Skills, experience, education and projects live in `data/portfolio.ts`. Project 
 
 ## Deployment
 
-Pushes to `main` build a static export (`out/`) and publish it to https://sifat07.github.io via `.github/workflows/deploy.yml`. In the repo's Settings → Pages, the source must be set to "GitHub Actions".
+Pushes to `main` build a static export (`out/`) and publish it to the `gh-pages` branch via `.github/workflows/deploy.yml`. GitHub Pages serves that branch at https://sifat07.github.io (Settings → Pages → Deploy from a branch → `gh-pages` / root).
