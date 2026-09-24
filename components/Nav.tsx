@@ -30,14 +30,6 @@ const Nav = () => {
             {link.name}
           </Link>
         ))}
-        <a
-          href="/Sifat%20Jasim%20-%20Resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-          className={styles.navLink}
-        >
-          Résumé
-        </a>
       </div>
     </div>
   );

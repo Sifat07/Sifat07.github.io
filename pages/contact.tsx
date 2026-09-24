@@ -16,7 +16,7 @@ const Contact = () => {
       icon: <FaLinkedin />,
       label: "LinkedIn",
       value: "sifatjasim",
-      link: "https://www.linkedin.com/in/sifat-jasim-81ab8580/",
+      link: "https://www.linkedin.com/in/sifatjasim/",
     },
     {
       icon: <FaGithub />,

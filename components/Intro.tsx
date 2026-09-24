@@ -78,7 +78,7 @@ const Intro = () => {
 
   const socialLinks = [
     { icon: FaGithub, href: "https://github.com/Sifat07", label: "GitHub" },
-    { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/sifat-jasim-81ab8580/", label: "LinkedIn" },
+    { icon: FaLinkedinIn, href: "https://www.linkedin.com/in/sifatjasim/", label: "LinkedIn" },
     { icon: FaTwitter, href: "https://twitter.com/Sifat_sr4", label: "Twitter" },
     { icon: FaYoutube, href: "https://www.youtube.com/channel/UCnSSV3HEPk-wBm-1c38s5yA", label: "YouTube" },
     { icon: FaFacebook, href: "https://www.facebook.com/Madridista.Sifat7/", label: "Facebook" },
@@ -141,6 +141,9 @@ const Intro = () => {
             );
           })}
         </motion.div>
+        <motion.p variants={fadeInUp} className={styles.role}>
+          Software Engineer
+        </motion.p>
       </motion.div>
 
       <div className={styles.socials}>
