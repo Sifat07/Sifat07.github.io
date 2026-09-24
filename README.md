@@ -1,6 +1,6 @@
 # Sifat Jasim — Portfolio
 
-Personal portfolio site built with Next.js (pages router), React, TypeScript, Sass modules and Framer Motion.
+Personal site built with Next.js (pages router, static export), React, TypeScript and Sass modules. One page, system fonts, light and dark themes.
 
 ## Getting started
 
@@ -15,13 +15,16 @@ Then open http://localhost:3000.
 
 ## Editing content
 
-Skills, experience, education and projects live in `data/portfolio.ts`. Project screenshots go in `public/images/projects/`.
+- `resume/Sifat_Jasim_Resume.md` is the single source for the résumé. The "Full résumé" section of the site renders from it at build time, and `pnpm resume:pdf` renders it to `public/Sifat Jasim - Resume.pdf` with headless Chrome (set `CHROME_PATH` if Chrome isn't found). Regenerate and commit the PDF whenever the Markdown changes.
+- `data/site.ts` holds the curated copy on the home page (headline, intro, How I work, Selected work). Keep it consistent with the résumé.
+- `/work`, `/about` and `/contact` forward to the matching section of the home page so old links keep working.
 
 ## Scripts
 
 - `pnpm dev` — start the dev server
 - `pnpm build` — production build
 - `pnpm start` — serve the production build
+- `pnpm resume:pdf` — regenerate the résumé PDF from the Markdown
 - `pnpm format` — run Prettier
 
 ## Deployment
