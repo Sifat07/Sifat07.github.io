@@ -13,10 +13,12 @@ const SEO: React.FC<SEOProps> = ({
   title = "Sifat Jasim | Full-Stack Developer",
   description = "Full-Stack Developer specializing in React, Next.js, and modern web architectures. Portfolio of Sifat Jasim.",
   keywords = "Sifat Jasim, Portfolio, Full-Stack Developer, React, Next.js, TypeScript, Node.js",
-  ogImage = "/og-image.png", // Ensure this exists in public/
+  ogImage = "/og-image.png",
   url = "https://sifat07.github.io",
 }) => {
   const fullTitle = title.includes("Sifat") ? title : `${title} | Sifat Jasim`;
+  // Link previews (Open Graph, Twitter) need an absolute image URL.
+  const ogImageUrl = ogImage.startsWith("http") ? ogImage : `${url}${ogImage}`;
 
   return (
     <Head>
@@ -31,14 +33,14 @@ const SEO: React.FC<SEOProps> = ({
       <meta property="og:url" content={url} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={ogImage} />
+      <meta property="og:image" content={ogImageUrl} />
 
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={url} />
       <meta property="twitter:title" content={fullTitle} />
       <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={ogImage} />
+      <meta property="twitter:image" content={ogImageUrl} />
 
       <link rel="icon" href="/favicon.ico" />
     </Head>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 import styles from "./contact.module.scss";
 import Layout from "../components/Layout";
@@ -11,12 +11,6 @@ const Contact = () => {
       label: "Email",
       value: "sifatjasim@gmail.com",
       link: "mailto:sifatjasim@gmail.com",
-    },
-    {
-      icon: <FaPhone />,
-      label: "Phone",
-      value: "+880 1670 950 940",
-      link: "tel:+8801670950940",
     },
     {
       icon: <FaLinkedin />,
