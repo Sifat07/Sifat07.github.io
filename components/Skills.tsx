@@ -1,25 +1,4 @@
 import React from "react";
-import {
-  SiCss3,
-  SiFramer,
-  SiGit,
-  SiHtml5,
-  SiJavascript,
-  SiNextdotjs,
-  SiReact,
-  SiSass,
-  SiStorybook,
-  SiTypescript,
-  SiNodedotjs,
-  SiTailwindcss,
-  SiPrisma,
-  SiFastify,
-  SiMysql,
-  SiDocker,
-  SiGooglecloud,
-  SiGithubactions,
-  SiSupabase,
-} from "react-icons/si";
 import styles from "./Skills.module.scss";
 import { skillsData } from "../data/portfolio";
 import { motion } from "framer-motion";

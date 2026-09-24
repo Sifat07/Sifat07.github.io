@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React, { useState } from "react";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
@@ -13,7 +12,7 @@ import Layout from "../components/Layout";
 type TabsType = {
   label: string;
   index: number;
-  Component: React.FC<{}>;
+  Component: React.FC;
 }[];
 
 // Tabs Array
@@ -65,19 +64,19 @@ const About = () => {
           <div className={styles.aboutText}>
             <span className={styles.codeTag}>{"<h1>"}</span>
             <h1>
-              Hi, I'm <span>Sifat Jasim</span>
+              Hi, I&apos;m <span>Sifat Jasim</span>
             </h1>
                         <span className={styles.codeTag}>{"</h1>"}</span>
             <div className={styles.bioContent}>
               <span className={styles.codeTag}>{"<p>"}</span>
               <p>
-                I'm a Software Engineer based in Dhaka, currently engineering 
+                I&apos;m a Software Engineer based in Dhaka, currently engineering 
                 impactful solutions at <strong>ngaze</strong>. My passion lies in crafting 
                 minimalistic designs, fluid UI effects, and intuitive user experiences.
               </p>
               <p>
-                I'm a dedicated problem solver and quick learner with high attention 
-                to detail. When I'm not writing code, you can find me supporting 
+                I&apos;m a dedicated problem solver and quick learner with high attention 
+                to detail. When I&apos;m not writing code, you can find me supporting 
                 Real Madrid or exploring the latest in cinematography.
               </p>
               <p>
