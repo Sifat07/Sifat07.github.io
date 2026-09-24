@@ -1,0 +1,129 @@
+@use "../components/utils/variables.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $primary-black;
+  color: white;
+  @include page-gutter;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+  align-items: center;
+  gap: 2rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    @include page-title;
+    margin: 0;
+  }
+
+  .codeTag {
+    @include code-tag;
+  }
+
+  .descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .description {
+    @include body-text;
+    text-align: center;
+    max-width: 600px;
+    margin: 0;
+  }
+
+  .contactGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: 50px;
+  }
+
+  .contactCard {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    @include card-hover;
+
+    .icon {
+      font-size: 2.5rem;
+      color: $palegold;
+      margin-right: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      .label {
+        font-size: 0.9rem;
+        color: $grey;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .value {
+        font-size: 1.1rem;
+        color: white;
+        font-weight: bold;
+        word-break: break-all;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    .title {
+      font-size: 2.5rem;
+    }
+    .description {
+      font-size: 1rem;
+      padding: 0 10%;
+    }
+    .contactGrid {
+      grid-template-columns: 1fr;
+      width: 90%;
+      gap: 1rem;
+    }
+    .contactCard {
+      padding: 1.2rem;
+      .icon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
+      .info {
+        .value {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

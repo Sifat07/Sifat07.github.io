@@ -1,0 +1,68 @@
+@use "../../components/utils/variables.scss" as *;
+
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-bottom: 1px solid rgba($grey, 0.1);
+  padding-bottom: 0.5rem;
+
+  .tab, .selectedTab {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    transition: all 0.3s ease;
+    color: rgba($white, 0.5);
+    position: relative;
+    
+    &:hover {
+      color: $palegold;
+    }
+  }
+
+  .selectedTab {
+    color: $palegold;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $palegold;
+      box-shadow: 0 0 10px rgba($palegold, 0.3);
+    }
+  }
+}
+
+.tabPanel {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media only screen and (max-width: 600px) {
+  .tabs {
+    gap: 1rem;
+    .tab, .selectedTab {
+      font-size: 1rem;
+    }
+  }
+}
