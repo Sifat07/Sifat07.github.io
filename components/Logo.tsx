@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-export function Logo(props: React.SVGProps<SVGSVGElement>): React.JSX.Element {
+export function Logo(): React.JSX.Element {
   return (
     <div
       style={{

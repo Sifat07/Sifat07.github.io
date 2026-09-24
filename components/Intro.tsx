@@ -1,20 +1,17 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./Intro.module.scss";
 import { motion } from "framer-motion";
 import {
   FaFacebook,
-  FaFacebookF,
   FaGithub,
   FaLinkedinIn,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import Link from "next/link";
 import router from "next/router";
 
 // Our custom easing
-let easing: [number, number, number, number] = [0.6, -0.05, 0.01, 0.99];
+const easing: [number, number, number, number] = [0.6, -0.05, 0.01, 0.99];
 
 // animate: defines animation
 // initial: defines initial state of animation or stating point.
