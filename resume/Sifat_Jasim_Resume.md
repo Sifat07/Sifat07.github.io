@@ -6,17 +6,21 @@ Flat-5C, Building-18, Shopnonagar R/A 2, Pallabi, Mirpur-9, Dhaka-1216 · +88016
 
 ## Summary
 
-Software engineer with 5 years of experience building SaaS and EdTech platforms. Skilled at delivering clean, responsive interfaces and scalable backend systems using modern JavaScript/TypeScript frameworks. Experienced in SaaS migrations, subscription and payment flows and live learning features. Passionate about developer experience, performance optimization and creating products that have meaningful impact on users.
+Software engineer with 5 years of experience building SaaS and EdTech platforms. Skilled at delivering clean, responsive interfaces and scalable backend systems using modern JavaScript/TypeScript frameworks. Experienced in SaaS migrations, subscription and payment flows and live learning features. Passionate about developer experience, performance optimization and creating products that have meaningful impact on users. Currently co-founder and QA engineer of an AI-agent-orchestrated commerce platform, and solo lead of a full-stack community platform (membership, ticketing, analytics).
 
 ## Experience
 
-### Stealth — Co-founder
+### Stealth — Co-founder & QA Engineer
 *Aug 2026 – Present*
 
-- Co-founding a multi-tenant commerce product, building it from zero.
+- Test and harden a multi-tenant commerce platform built by fleets of AI coding agents, finding and fixing the integration bugs that volume-at-speed development lets through.
+- Fixed OAuth scope and credential-linking bugs blocking Meta/Instagram/WhatsApp messaging integrations, restoring merchant inbox replies.
+- Fixed a shipping-carrier webhook handshake and simplified an address-booking flow for the Pathao integration, plus added cancel-shipment support to the carrier interface.
+- Fixed a session bug where the mobile SSE stream silently dropped the web login cookie.
+- Wrote a manual PSP sandbox runbook and review checklist to give third-party payment integrations a repeatable test path.
 
 ### Ngaze, Inc. — Software Engineer
-*Dec 2022 – Jul 2026*
+*Dec 2022 – Aug 2026*
 
 - Collaborated on multi-tenant SaaS architecture implementing subdomain routing, organization on-boarding and tenant-aware UIs that enabled segmented deployments for different institutions.
 - Built core Learning Management System features including classroom workflows, lesson sequencing, progress tracking and live interactions that improved student engagement and teacher visibility.
@@ -47,6 +51,7 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 *[pmadridistabd.com](https://pmadridistabd.com/) · Next.js, Tailwind CSS, TypeScript, Fastify, Prisma, SQL, AWS S3*
 
 - Community platform for Real Madrid fans in Bangladesh, with a membership system for over 5,000 registered fans, article writing, ticket allocation and event management.
+- Own feature development end to end, including an in-house analytics and notifications system, plus data-integrity, security and CI hardening (audit-trail fixes, order-oversell prevention, log-retention crons).
 
 ### Madridismo Corner
 *[madridismocorner.com](https://www.madridismocorner.com/) · Next.js, Supabase, Tailwind CSS, TypeScript, Pathao SDK*
@@ -70,11 +75,11 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 
 ## Skills
 
-- **Frontend:** React, Next.js (Pages/App Router), TypeScript. Prefer SCSS for scalable, maintainable styles; also experienced with Tailwind CSS for rapid prototyping.
-- **Backend:** Fastify, Prisma ORM, SQL. Prefer Fastify over Express for speed and Prisma for type safety + migrations.
-- **Architecture & DevOps:** Worked in monorepo environments (Turborepo, pnpm) with shared UI libraries for faster iteration in startup settings. Experienced in using CI/CD pipelines (GitHub Actions, Docker, GCP) for deployment and delivery, though not primary owner of DevOps.
-- **UI/UX & DX:** Accessibility-first design, dark mode, animations (Framer Motion, Lottie). Believe UX comes before aesthetics.
-- **Collaboration:** Agile sprints, async teamwork, code reviews, mentoring juniors, writing docs. Value knowledge sharing for scalable teams.
+- **Frontend:** React, Next.js (Pages/App Router), TypeScript, SCSS, Tailwind CSS.
+- **Backend:** Fastify, Express.js, Prisma ORM, SQL (MySQL).
+- **Architecture & DevOps:** Turborepo, pnpm monorepos with shared UI libraries; CI/CD via GitHub Actions, Docker, GCP.
+- **UI/UX & DX:** Accessibility-first design, dark mode, Framer Motion/Lottie animations.
+- **Collaboration:** Agile sprints, async teamwork, code reviews, mentoring juniors, technical documentation.
 
 ## Reference
 
