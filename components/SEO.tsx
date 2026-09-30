@@ -11,8 +11,8 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({
   title = "Sifat Jasim | Software Engineer",
-  description = "Software Engineer specializing in React, Next.js, and modern web architectures. Portfolio of Sifat Jasim.",
-  keywords = "Sifat Jasim, Portfolio, Software Engineer, React, Next.js, TypeScript, Node.js",
+  description = "Sifat Jasim, software engineer: SaaS & EdTech, and QA for AI-built systems. React, Next.js, TypeScript, Fastify.",
+  keywords = "Sifat Jasim, Portfolio, Software Engineer, Full-Stack, QA Engineer, React, Next.js, TypeScript, Fastify, Node.js",
   ogImage = "/og-image.png",
   url = "https://sifat07.github.io",
 }) => {

@@ -85,6 +85,17 @@
       margin-bottom: 1.5rem;
     }
 
+    .highlights {
+      margin: 0 0 1.5rem;
+      padding-left: 1.2rem;
+      color: #e0e0e0;
+      line-height: 1.6;
+
+      li::marker {
+        color: $palegold;
+      }
+    }
+
     .techStack {
       display: flex;
       flex-wrap: wrap;
