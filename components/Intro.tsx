@@ -141,9 +141,6 @@ const Intro = () => {
             );
           })}
         </motion.div>
-        <motion.p variants={fadeInUp} className={styles.role}>
-          Software Engineer
-        </motion.p>
       </motion.div>
 
       <div className={styles.socials}>
