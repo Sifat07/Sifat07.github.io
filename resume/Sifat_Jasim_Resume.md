@@ -68,8 +68,9 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 
 ## Skills
 
-- **Frontend:** React, Next.js (Pages/App Router), TypeScript, SCSS, Tailwind CSS.
-- **Backend:** Fastify, Express.js, Prisma ORM, SQL (MySQL).
-- **Architecture & DevOps:** Turborepo, pnpm monorepos with shared UI libraries; CI/CD via GitHub Actions, Docker, GCP.
+- **Frontend & Mobile:** React, Next.js (Pages/App Router), React Native, Expo, TypeScript, SCSS, Tailwind CSS.
+- **Backend:** Node.js, Fastify, Express.js, Rust, Prisma ORM, MySQL, Redis.
+- **Testing:** Playwright, Jest.
+- **Architecture & DevOps:** Turborepo, pnpm monorepos with shared UI libraries; CI/CD via GitHub Actions, Docker; AWS (S3, SES), GCP.
 - **UI/UX & DX:** Accessibility-first design, dark mode, Framer Motion/Lottie animations.
 - **Collaboration:** Agile sprints, async teamwork, code reviews, mentoring juniors, technical documentation.
