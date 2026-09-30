@@ -1,6 +1,6 @@
 # SIFAT JASIM
 
-**Full-Stack Engineer · SaaS & EdTech · QA for AI-Built Systems**
+**Software Engineer · SaaS & EdTech · QA for AI-Built Systems**
 
 Flat-5C, Building-18, Shopnonagar R/A 2, Pallabi, Mirpur-9, Dhaka-1216 · +8801670950940 · [sifatjasim@gmail.com](mailto:sifatjasim@gmail.com) · [linkedin.com/in/sifatjasim](https://www.linkedin.com/in/sifatjasim/) · [github.com/Sifat07](https://github.com/Sifat07)
 

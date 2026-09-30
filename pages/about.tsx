@@ -42,7 +42,7 @@ const tabs: TabsType = [
 const About = () => {
   const [selectedTab, setSelectedTab] = useState<number>(tabs[0].index);
   return (
-    <Layout title="About" description="Learn more about Sifat Jasim, a software engineer with a passion for minimalistic design and dynamic user experiences.">
+    <Layout title="About" description="About Sifat Jasim: software engineer with 5 years in SaaS and EdTech, now co-founder and QA engineer at a stealth commerce startup.">
       <div className={styles.container}>
         <div className={styles.aboutContainer}>
           <div className={styles.avatarContainer}>
@@ -70,9 +70,10 @@ const About = () => {
             <div className={styles.bioContent}>
               <span className={styles.codeTag}>{"<p>"}</span>
               <p>
-                I&apos;m a Software Engineer based in Dhaka, currently co-founding a
-                stealth venture after five years at <strong>ngaze</strong>. My passion lies in crafting
-                minimalistic designs, fluid UI effects, and intuitive user experiences.
+                I&apos;m a software engineer based in Dhaka. After five years at
+                <strong> ngaze</strong> building SaaS and EdTech products, I&apos;m now co-founder
+                and QA engineer at a stealth commerce startup, hardening a platform written by
+                fleets of AI coding agents.
               </p>
               <p>
                 I&apos;m a dedicated problem solver and quick learner with high attention 
@@ -80,8 +81,8 @@ const About = () => {
                 Real Madrid or exploring the latest in cinematography.
               </p>
               <p>
-                I thrive in the entire frontend spectrum and love collaborating on 
-                ambitious projects with forward-thinking people.
+                I work across the whole stack, from polished interfaces to backend systems,
+                and love collaborating on ambitious projects with forward-thinking people.
               </p>
               <span className={styles.codeTag}>{"</p>"}</span>
             </div>

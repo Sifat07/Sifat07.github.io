@@ -5,7 +5,7 @@ import styles from "./work.module.scss";
 
 const Work = () => {
   return (
-    <Layout title="Work" description="Featured projects and engineering work by Sifat Jasim.">
+    <Layout title="Work" description="Featured projects by Sifat Jasim: a fan-club platform, a merch store and an open-source courier SDK, with real usage numbers.">
       <div className={styles.container}>
         <div className={styles.titleWrapper}>
           <span className={styles.codeTag}>{"<h1>"}</span>
@@ -32,6 +32,11 @@ const Work = () => {
               <div className={styles.projectInfo}>
                 <h2>{project.title}</h2>
                 <p>{project.description}</p>
+                {project.highlights && (
+                  <ul className={styles.highlights}>
+                    {project.highlights.map(h => <li key={h}>{h}</li>)}
+                  </ul>
+                )}
                 <div className={styles.techStack}>
                   {project.tech.map(t => <span key={t}>{t}</span>)}
                 </div>

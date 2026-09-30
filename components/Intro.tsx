@@ -158,6 +158,17 @@ const Intro = () => {
             <social.icon fill="#e8c99b" size="2.5rem" />
           </motion.a>
         ))}
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          href="/Sifat%20Jasim%20-%20Resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className={styles.resumeLink}
+        >
+          Résumé
+        </motion.a>
       </div>
 
       <div className={styles.tapBehavior}>
