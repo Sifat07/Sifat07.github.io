@@ -1,6 +1,6 @@
 # SIFAT JASIM
 
-**Software Engineer**
+**Full-Stack Engineer · SaaS & EdTech · QA for AI-Built Systems**
 
 Flat-5C, Building-18, Shopnonagar R/A 2, Pallabi, Mirpur-9, Dhaka-1216 · +8801670950940 · [sifatjasim@gmail.com](mailto:sifatjasim@gmail.com) · [linkedin.com/in/sifatjasim](https://www.linkedin.com/in/sifatjasim/) · [github.com/Sifat07](https://github.com/Sifat07)
 
@@ -11,25 +11,27 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 ## Experience
 
 ### Stealth — Co-founder & QA Engineer
-*Aug 2026 – Present*
+*Remote · Aug 2026 – Present*
+*Co-founding a multi-tenant commerce platform whose code is written by fleets of AI coding agents.*
 
 - Test and harden a multi-tenant commerce platform built by fleets of AI coding agents, finding and fixing the integration bugs that volume-at-speed development lets through.
-- Fixed OAuth scope and credential-linking bugs blocking Meta/Instagram/WhatsApp messaging integrations, restoring merchant inbox replies.
-- Fixed a shipping-carrier webhook handshake and simplified an address-booking flow for the Pathao integration, plus added cancel-shipment support to the carrier interface.
-- Fixed a session bug where the mobile SSE stream silently dropped the web login cookie.
-- Wrote a manual PSP sandbox runbook and review checklist to give third-party payment integrations a repeatable test path.
+- Fixed **OAuth scope and credential-linking bugs** blocking Meta/Instagram/WhatsApp messaging integrations, **restoring merchant inbox replies**.
+- Fixed a shipping-carrier webhook handshake and simplified an address-booking flow for the **Pathao integration**, plus added **cancel-shipment support** to the carrier interface.
+- Fixed a session bug where the **mobile SSE stream** silently dropped the web login cookie.
+- Wrote a **PSP sandbox runbook** and review checklist to give third-party payment integrations a repeatable test path.
 
 ### Ngaze, Inc. — Software Engineer
-*Dec 2022 – Aug 2026*
+*Remote, New York · Dec 2022 – Aug 2026*
+*Multi-tenant SaaS learning platform serving schools and institutions.*
 
-- Collaborated on multi-tenant SaaS architecture implementing subdomain routing, organization on-boarding and tenant-aware UIs that enabled segmented deployments for different institutions.
-- Built core Learning Management System features including classroom workflows, lesson sequencing, progress tracking and live interactions that improved student engagement and teacher visibility.
-- Supported monetization initiatives by integrating subscription management and payment gateways, contributing to the platform's revenue streams.
-- Enhanced platform usability by migrating styles to Tailwind CSS, adding dark mode, improving accessibility and developing a Lexical-based in-platform editor.
-- Improved engineering culture through code reviews, TypeScript + Fastify best practices and mentoring junior developers, ensuring consistency and maintainability across the team.
+- Collaborated on multi-tenant SaaS architecture implementing **subdomain routing, organization onboarding and tenant-aware UIs** that enabled segmented deployments for different institutions.
+- Built core **Learning Management System** features including classroom workflows, lesson sequencing, progress tracking and live interactions that improved student engagement and teacher visibility.
+- Supported monetization initiatives by integrating **subscription management and payment gateways**, contributing to the platform's revenue streams.
+- Enhanced platform usability by migrating styles to **Tailwind CSS**, adding **dark mode**, improving accessibility and developing a **Lexical-based in-platform editor**.
+- Improved engineering culture through code reviews, TypeScript + Fastify best practices and **mentoring junior developers**, ensuring consistency and maintainability across the team.
 
 ### Ngaze, Inc. — Junior Software Engineer
-*Sep 2021 – Nov 2022*
+*Remote, New York · Sep 2021 – Nov 2022*
 
 - Focused on frontend engineering, building admin dashboards, contest forms and community features using React, Next.js and SCSS.
 - Translated Figma designs into responsive UIs, ensuring cross-browser compatibility and mobile-friendly layouts.
@@ -50,7 +52,7 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 ### Peña Madridista Bangladesh
 *[pmadridistabd.com](https://pmadridistabd.com/) · Next.js, Tailwind CSS, TypeScript, Fastify, Prisma, SQL, AWS S3*
 
-- Community platform for Real Madrid fans in Bangladesh, with a membership system for over 5,000 registered fans, article writing, ticket allocation and event management.
+- Community platform for Real Madrid fans in Bangladesh, with a membership system for **5,000+ registered fans**, article writing, ticket allocation and event management.
 - Own feature development end to end, including an in-house analytics and notifications system, plus data-integrity, security and CI hardening (audit-trail fixes, order-oversell prevention, log-retention crons).
 
 ### Madridismo Corner
@@ -80,7 +82,3 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 - **Architecture & DevOps:** Turborepo, pnpm monorepos with shared UI libraries; CI/CD via GitHub Actions, Docker, GCP.
 - **UI/UX & DX:** Accessibility-first design, dark mode, Framer Motion/Lottie animations.
 - **Collaboration:** Agile sprints, async teamwork, code reviews, mentoring juniors, technical documentation.
-
-## Reference
-
-**Sabbir Ahmed** — Co-founder and Chief Technology Officer, Ngaze, Inc. · [sa@ngaze.co](mailto:sa@ngaze.co)
