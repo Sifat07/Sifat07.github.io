@@ -26,7 +26,8 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 
 - Collaborated on multi-tenant SaaS architecture implementing **subdomain routing, organization onboarding and tenant-aware UIs** that enabled segmented deployments for different institutions.
 - Built core **Learning Management System** features including classroom workflows, lesson sequencing, progress tracking and live interactions that improved student engagement and teacher visibility.
-- Supported monetization initiatives by integrating **subscription management and payment gateways**, contributing to the platform's revenue streams.
+- Built **subscription management and payment-gateway integration** to support the platform's monetization plans.
+- Contributed to contest and practice features used by **1,700+ students across 12 countries**, handling **~20k solution submissions** over **40 contests**.
 - Enhanced platform usability by migrating styles to **Tailwind CSS**, adding **dark mode**, improving accessibility and developing a **Lexical-based in-platform editor**.
 - Improved engineering culture through code reviews, TypeScript + Fastify best practices and **mentoring junior developers**, ensuring consistency and maintainability across the team.
 
@@ -52,8 +53,8 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 ### Peña Madridista Bangladesh
 *[pmadridistabd.com](https://pmadridistabd.com/) · Next.js, Tailwind CSS, TypeScript, Fastify, Prisma, SQL, AWS S3*
 
-- Community platform for Real Madrid fans in Bangladesh, with a membership system for **5,000+ registered fans**, article writing, ticket allocation and event management.
-- Own feature development end to end, including an in-house analytics and notifications system, plus data-integrity, security and CI hardening (audit-trail fixes, order-oversell prevention, log-retention crons).
+- Community platform for Real Madrid fans in Bangladesh, with a membership system for **1,500+ registered users** (~970 memberships, 800+ event registrations), article writing, ticket allocation and event management.
+- Own feature development end to end, including an in-house analytics and notifications system (**27k+ tracked events**), plus data-integrity, security and CI hardening (audit-trail fixes, order-oversell prevention, log-retention crons).
 
 ### Madridismo Corner
 *[madridismocorner.com](https://www.madridismocorner.com/) · Next.js, Supabase, Tailwind CSS, TypeScript, Pathao SDK*
