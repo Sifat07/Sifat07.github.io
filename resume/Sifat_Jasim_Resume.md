@@ -61,16 +61,6 @@ Software engineer with 5 years of experience building SaaS and EdTech platforms.
 
 - E-commerce platform for Real Madrid merchandise, with custom admin dashboards for order processing and inventory management.
 
-### Dollabills
-*PHP, Laravel, JavaScript, AWS Chime, S3, WebRTC, WebSocket*
-
-- Social platform with real-time chat and video conferencing. Contributed to frontend development: fixed broken UIs, improved responsiveness and refined user flows.
-
-### Inventory & HR Management System
-*Next.js, TypeScript, Express.js, TypeORM, MySQL*
-
-- Inventory and HR solution with role-based access. Led the complete frontend implementation, from design to integration with the backend APIs.
-
 ## Education
 
 - **MIT: Information Technology** — 2021, Institute of Information Technology, University of Dhaka
