@@ -33,9 +33,9 @@ const content = {
   eyebrow: "Co-founder, Kichu · Dhaka, Bangladesh",
   headline: "I stay with things until they&nbsp;work.",
   ogLine: "I stay with things until they work.",
-  intro: `I'm Sifat, a co-founder of <a class="u" href="${KICHU_URL}">Kichu</a>. I've spent five years building software for schools and shops, and at Kichu I make sure what we ship actually holds up.`,
+  intro: `I'm Sifat, a co-founder of <a class="u" href="${KICHU_URL}">Kichu</a>. I've spent five years building software for schools and shops, and at Kichu I work on making sure what we ship holds up.`,
   description:
-    "Sifat Jasim is a co-founder of Kichu, where he makes sure the software holds up. Five years building SaaS and learning platforms.",
+    "Sifat Jasim is a co-founder of Kichu, where he works on making sure the software holds up. Five years building SaaS and learning platforms.",
   contactLine:
     "Email is the best way to reach me. I'm glad to hear from anyone building for small businesses, or anyone who wants to talk about testing software that AI agents write.",
   links: [
@@ -54,8 +54,8 @@ const content = {
   // "How I work": grounded in the club history and the résumé.
   method: [
     "I like the unglamorous end of building: the edge case, the webhook that quietly fails, the button that works on my phone but not on yours. I'll stay with a problem long after it stops being interesting, because that's usually where the bug is.",
-    "At Kichu, AI agents write most of our code. That makes code cheap, and it makes knowing whether the code is right the hard part. That's my part: I test the platform, find what breaks and fix it, from merchants' Instagram and WhatsApp replies to the courier handshake behind every delivery.",
-    "I build what I test, too. Almost everything below I either built myself or helped carry from an idea to people using it.",
+    "At Kichu, AI agents write most of our code. That makes code cheap and makes knowing whether it's right the hard part. My part is that question: I point agents at the work, check what they bring back, and keep at a problem until it really holds up on a merchant's phone, not just in a test.",
+    "Side projects are different: those I built myself, start to finish.",
   ],
 
   offClock:
