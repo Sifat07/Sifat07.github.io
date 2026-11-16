@@ -23,73 +23,72 @@ const DIST = join(ROOT, "dist");
    cost structure) belongs here.
 ---------------------------------------------------------------------------- */
 
-const SITE_URL = "https://ahmed.bio/";
+const SITE_URL = "https://sifat07.github.io/";
 const KICHU_URL = "https://kichu.dev/";
 
 const content = {
-  name: "Sabbir Ahmed",
-  tagline: "Founder & CEO, Kichu",
-  eyebrow: "Technical founder · Dhaka, Bangladesh",
-  headline: "Every small business deserves what the big ones have. We're building&nbsp;it.",
-  intro: `I'm Sabbir, and I lead <a class="u" href="${KICHU_URL}">Kichu</a>. I've spent fifteen years starting and growing companies with good people, starting with freelance jobs I took as a teenager, and this is the work all of it was preparing me for.`,
+  name: "Sifat Jasim",
+  tagline: "Co-founder, Kichu",
+  role: "Co-founder",
+  eyebrow: "Co-founder, Kichu · Dhaka, Bangladesh",
+  headline: "I stay with things until they&nbsp;work.",
+  ogLine: "I stay with things until they work.",
+  intro: `I'm Sifat, a co-founder of <a class="u" href="${KICHU_URL}">Kichu</a>. I've spent five years building software for schools and shops, and at Kichu I make sure what we ship actually holds up.`,
   description:
-    "Sabbir Ahmed leads Kichu, giving every small business what the big ones have. Fifteen years building companies, from freelancing as a teenager to co-founder and CTO.",
+    "Sifat Jasim is a co-founder of Kichu, where he makes sure the software holds up. Five years building SaaS and learning platforms.",
   contactLine:
-    "Email is the best way to reach me. I'm glad to hear from anyone who'd like to build Kichu with us or work with it, or who just wants to talk about commerce, AI agents, or whatever they're curious about.",
+    "Email is the best way to reach me. I'm glad to hear from anyone building for small businesses, or anyone who wants to talk about testing software that AI agents write.",
   links: [
-    { href: "mailto:sabbirahmed8361@gmail.com", text: "sabbirahmed8361@gmail.com" },
+    { href: "mailto:sifatjasim@kichu.dev", text: "sifatjasim@kichu.dev" },
     { href: KICHU_URL, text: "kichu.dev" },
-    { href: "https://x.com/expectcuriously", text: "x.com/expectcuriously" },
-    { href: "https://linkedin.com/in/sabbirahm", text: "linkedin.com/in/sabbirahm" },
-    { href: "https://github.com/thesabbir", text: "github.com/thesabbir" },
+    { href: "https://www.linkedin.com/in/sifatjasim/", text: "linkedin.com/in/sifatjasim" },
+    { href: "https://github.com/Sifat07", text: "github.com/Sifat07" },
   ],
 
   // "Now": the company, in kichu.dev's public terms only.
   now: [
-    "Most small shops run on a pile of tools that don't talk to each other, held together by an owner who stays up past midnight making the numbers agree. Kichu puts the shop, the orders, the payments, the couriers and the books in one place and lets the software do the chasing, for a fraction of what all those tools cost. We'd like that owner to have their evenings back.",
+    "The whole business in one place, for the people who run it alone. Kichu puts the storefront, the orders, the payments, the couriers and the books together, so a small, founder-led business can run all of it from a phone.",
     "We're headquartered in Philadelphia, and it's live.",
   ],
 
-  // "How I work": the founder's edge. Grounded only in known facts.
+  // "How I work": grounded in the club history and the résumé.
   method: [
-    "I've had a turn at most of the jobs in a tech company, and each one taught me the same thing: companies rise or fall on their foundations, and the foundations are people as much as code. Get them right early and everyone who comes after moves faster.",
-    "So I keep two things in view at once: where we're going, and the small detail that could trip us on the way. I'm still learning to do both well.",
-    "At Kichu that means a bit of everything. I set the direction, sit with merchants to see how their day really goes, bring the right people in, and still write the rules our AI agents work under. Agents write most of our code now, which lets a small team do a great deal. It also makes it easy to build the wrong thing quickly, so the old questions matter more than ever: what's worth building, and is it right?",
+    "I like the unglamorous end of building: the edge case, the webhook that quietly fails, the button that works on my phone but not on yours. I'll stay with a problem long after it stops being interesting, because that's usually where the bug is.",
+    "At Kichu, AI agents write most of our code. That makes code cheap, and it makes knowing whether the code is right the hard part. That's my part: I test the platform, find what breaks and fix it, from merchants' Instagram and WhatsApp replies to the courier handshake behind every delivery.",
+    "I build what I test, too. Almost everything below I either built myself or helped carry from an idea to people using it.",
   ],
 
-  // "Off the clock": the person, from the founder's own bio. Quiet, not announced.
   offClock:
-    "I'm happiest absorbed in something: a hard problem, a new subject, a pet project that may never ship. I love being around people who care about the same things, and more often than not I end up helping a community form around them. When I can, I'm outside. There's usually indie music on, and I keep a soft spot for pop culture. Mostly, I try to meet things as they are.",
+    "A Real Madrid fan since Zidane's volley in the 2002 final. That's how I ended up spending six years writing to the club until Bangladesh got its first official supporters' club, Peña Madridista Bangladesh, where I'm still Secretary. I play in our weekly football session too. And there's music on almost every day, any genre: Alvaro Soler and Juanes one minute, Arijit Singh or Skillet the next, plus a Spanish playlist I keep adding to.",
 
-  // Track record: outcomes, not a logo wall.
   work: [
     {
-      org: "Cefalo",
-      role: "Staff engineer, consulting for Norwegian SaaS companies",
-      when: "2023 — 2026",
-      note: "I worked with a subscription platform as it grew from one customer and about 2,000 users to more than 300,000 across 10–15 businesses, mostly on growth features and the scaling decisions along the way. I also mentored two engineers and helped other consultants think through hard design problems.",
-    },
-    {
       org: "Ngaze",
-      role: "Co-founder & CTO",
-      when: "2023",
-      note: "We set out to teach STEM through games and physics simulations. I looked after the technology, the strategy and hiring, and together we took it from an idea to a live product with two partners. One thing I'm glad we built early: a tool that let people with no coding background write interactive lessons with an LLM.",
+      role: "Software engineer",
+      when: "2021 — 2026",
+      note: "Five years on a learning platform for schools. I helped build the multi-school setup, classrooms and live lessons, and the contest features used by 1,700+ students in 12 countries, about 20,000 submissions over 40 contests. I also mentored newer engineers.",
     },
     {
-      org: "Fasset",
-      role: "Early engineer",
-      when: "2021 — 2023",
-      note: "I joined this regulated crypto exchange while its infrastructure was having a hard time. The team and I halved what the core services cost to run, shipped the peer-to-peer launch, and laid groundwork it later grew on. It now serves millions of users.",
+      org: "Peña Madridista Bangladesh",
+      role: "Built and runs its platform, solo",
+      when: "Side project",
+      note: `The website of Bangladesh's official Real Madrid supporters' club: memberships for 1,500+ people, event sign-ups, ticket requests and a merch store. <a class="u" href="https://pmadridistabd.com/">pmadridistabd.com</a>`,
     },
     {
-      org: "Cookups",
-      role: "Founding engineer",
-      when: "2017 — 2019",
-      note: "A marketplace for home cooks. I built the apps for web, iOS and Android from one codebase and the back office the business ran on, then hired four engineers who carried it with me to its acquisition by Chaldal.",
+      org: "Madridismo Corner",
+      role: "Built it",
+      when: "Side project",
+      note: `An online shop for Real Madrid merchandise, with the dashboards behind it for orders and stock. <a class="u" href="https://www.madridismocorner.com/">madridismocorner.com</a>`,
+    },
+    {
+      org: "Pathao Merchant SDK",
+      role: "Author",
+      when: "Open source",
+      note: `A typed toolkit for the Pathao courier's merchant API, on npm with 3,000+ downloads. <a class="u" href="https://github.com/Sifat07/pathao-merchant-sdk">GitHub</a>`,
     },
   ],
   earlier:
-    "Earlier: Shohoz, where I helped bring food delivery to the web and launch truck rental; BAIA Group, tracing supply chains over 2G connections; and East West Media Group, where I led a team of six building real-time video calls in the browser.",
+    "Education: Master's in Information Technology, University of Dhaka (2021); BSc in Computer Science &amp; Engineering, American International University–Bangladesh (2018).",
 };
 
 /* ---------------------------------------------------------------------------- */
@@ -124,7 +123,7 @@ const favicon =
   ).replace(/%23/g, "%23");
 
 const title = `${content.name} — ${content.tagline}`;
-const ogLine = "Every small business deserves what the big ones have. We're building it.";
+const ogLine = content.ogLine;
 
 const html = `<!doctype html>
 <html lang="en">
@@ -143,8 +142,6 @@ const html = `<!doctype html>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@expectcuriously">
-<meta name="twitter:creator" content="@expectcuriously">
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="${ogLine}">
 <meta name="twitter:image" content="${SITE_URL}og.png">
@@ -303,7 +300,7 @@ const html = `<!doctype html>
         <h3>Kichu</h3>
         <span class="venture-when">2026 — Present</span>
       </div>
-      <div class="venture-role">Founder &amp; CEO</div>
+      <div class="venture-role">${content.role}</div>
       <div class="prose">
         ${paras(content.now)}
       </div>
@@ -321,7 +318,7 @@ const html = `<!doctype html>
   </section>
 
   <section id="record">
-    <h2 class="label">Before Kichu</h2>
+    <h2 class="label">Work</h2>
     <ul class="work-list">${workRows}
     </ul>
     <p class="earlier">${content.earlier}</p>
@@ -346,7 +343,7 @@ const html = `<!doctype html>
     no web fonts, so it uses whatever typefaces your system already has. A small script
     with no dependencies builds it; the result weighs <code>__PAGE_SIZE__</code> and
     arrives in a single request. Dark mode follows your system. The source is on
-    <a class="u" href="https://github.com/thesabbir/thesabbir.github.io">GitHub</a>.
+    <a class="u" href="https://github.com/Sifat07/Sifat07.github.io">GitHub</a>.
   </footer>
 
 </div>
@@ -374,8 +371,8 @@ const trueBytes = statSync(outFile).size; // sanity: matches the printed figure
 copyFileSync(join(ROOT, "og.png"), join(DIST, "og.png"));
 writeFileSync(join(DIST, ".nojekyll"), "");
 
-// Apex-domain root files: the CNAME Pages needs, plus the custom 404.
-const ROOT_FILES = ["CNAME", "404.html"];
+// Root files: the custom 404. (No CNAME: served at sifat07.github.io.)
+const ROOT_FILES = ["404.html"];
 for (const f of ROOT_FILES) copyFileSync(join(ROOT, f), join(DIST, f));
 
 console.log(`built dist/index.html — colophon says ${kb}, file is ${trueBytes} bytes`);
